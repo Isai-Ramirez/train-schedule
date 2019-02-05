@@ -37,7 +37,7 @@ $("#add-train-btn").on("click", function(event) {
   console.log(newTrain.leave);
   console.log(newTrain.rate);
 
-  alert("Employee successfully added");
+
 
   // Clears all of the text-boxes
   $("#train-name").val("");
