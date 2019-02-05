@@ -64,7 +64,7 @@ database.ref().on("child_added", function(childSnapshot) {
   console.log(rate);
 
  
-  var departure = moment.unix(departure).format("HH:mm a");
+  var formatedDeparture = moment.unix(departure).format("HH:MM");
 
   
   var remaining = moment(departure).fromNow();
@@ -77,7 +77,7 @@ database.ref().on("child_added", function(childSnapshot) {
     $("<td>").text(trainName),
     $("<td>").text(destination),
     $("<td>").text(rate),
-    $("<td>").text(departure),
+    $("<td>").text(formatedDeparture),
     $("<td>").text(remaining),
   );
 
